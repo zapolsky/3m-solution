@@ -1,0 +1,770 @@
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.0.36+ (mel@mel-Aspire-5750G) (gcc version 4.6.3 (Ubuntu/Linaro 4.6.3-1ubuntu5) ) #1 SMP PREEMPT Tue Oct 28 17:35:14 EET 2014
+[    0.000000] CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=10c5387d
+[    0.000000] CPU: VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: RK30board
+[    0.000000] memory reserve: Memory(base:0x8f000000 size:120M) reserved for <ion>
+[    0.000000] memory reserve: Memory(base:0x8d800000 size:24M) reserved for <fb0 buf>
+[    0.000000] memory reserve: Total reserved 144M
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] bootconsole [earlycon0] enabled
+[    0.000000] CPU SRAM: copied sram code from c0c98000 to fef00100 - fef01f60
+[    0.000000] CPU SRAM: copied sram data from c0c99e60 to fef01f60 - fef026dc
+[    0.000000] sram_log:      4q ?&     :     4q ?)     !?, # 0q    *!  ! 3q   @      3q 
+[    0.000000] CLKDATA_MSG: pll_flag = 0x03
+[    0.000000] L310 cache controller enabled
+[    0.000000] l2x0: 16 ways, CACHE_ID 0x4100c0c8, AUX_CTRL 0x76050001, Cache size: 524288 B
+[    0.000000] DDR DEBUG: version 1.00 20130427 
+[    0.000000] DDR DEBUG: DDR3 Device
+[    0.000000] DDR DEBUG: Bus Width=32 Col=10 Bank=8 Row=16 CS=1 Total Capability=2048MB
+[    0.000000] DDR DEBUG: init success!!! freq=24MHz
+[    0.000000] DDR DEBUG: DTONE=0x1, DTERR=0x0, DTIERR=0x0, DTPASS=0x4, DGSL=0 extra clock, DGPS=180
+[    0.000000] DDR DEBUG: DTONE=0x1, DTERR=0x0, DTIERR=0x0, DTPASS=0x4, DGSL=0 extra clock, DGPS=180
+[    0.000000] DDR DEBUG: DTONE=0x1, DTERR=0x0, DTIERR=0x0, DTPASS=0x4, DGSL=0 extra clock, DGPS=180
+[    0.000000] DDR DEBUG: DTONE=0x1, DTERR=0x0, DTIERR=0x0, DTPASS=0x4, DGSL=0 extra clock, DGPS=180
+[    0.000000] DDR DEBUG: ZERR=0, ZDONE=0, ZPD=0x0, ZPU=0x0, OPD=0x0, OPU=0x0
+[    0.000000] DDR DEBUG: DRV Pull-Up=0xb, DRV Pull-Dwn=0xb
+[    0.000000] DDR DEBUG: ODT Pull-Up=0x2, ODT Pull-Dwn=0x2
+[    0.000000] On node 0 totalpages: 487424
+[    0.000000] free_area_init_node: node 0, pgdat c0c96100, node_mem_map c2180000
+[    0.000000]   Normal zone: 1744 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 184624 pages, LIFO batch:31
+[    0.000000]   HighMem zone: 2352 pages used for memmap
+[    0.000000]   HighMem zone: 298704 pages, LIFO batch:31
+[    0.000000] PERCPU: Embedded 7 pages/cpu @c318f000 s7072 r8192 d13408 u32768
+[    0.000000] pcpu-alloc: s7072 r8192 d13408 u32768 alloc=8*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 483328
+[    0.000000] Kernel command line: console=ttyFIQ0 androidboot.console=ttyFIQ0 init=/init initrd=0x62000000,0x00180000 mtdparts=rk29xxnand:0x00002000@0x00002000(misc),0x00004000@0x00004000(kernel),0x00008000@0x00008000(boot),0x00008000@0x00010000(recovery),0x000C0000@0x00018000(backup),0x00040000@0x000D8000(cache),0x00200000@0x00118000(userdata),0x00002000@0x00318000(kpanic),0x0012C000@0x0031A000(system),-@0x00446000(user) bootver=2013-05-18#1.20 firmware_ver=4.0.4
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Memory: 728MB 1176MB = 1904MB total
+[    0.000000] Memory: 1911020k/1911020k available, 186132k reserved, 1204224K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     DMA     : 0xffc00000 - 0xffe00000   (   2 MB)
+[    0.000000]     vmalloc : 0xf7000000 - 0xfe800000   ( 120 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xf6800000   ( 872 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .init : 0xc0408000 - 0xc0434000   ( 176 kB)
+[    0.000000]       .text : 0xc0434000 - 0xc0c3087c   (8179 kB)
+[    0.000000]       .data : 0xc0c32000 - 0xc0c97f08   ( 408 kB)
+[    0.000000]        .bss : 0xc0c9b024 - 0xc174f998   (10963 kB)
+[    0.000000] SLUB: Genslabs=13, HWalign=32, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:352
+[    0.000000] rk30_gpio_init: 128 gpio irqs in 4 banks
+[    0.000000] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+[    0.000000] rk_timer: version 1.2
+[    0.000000] Console: colour dummy device 80x30
+[    0.008707] Calibrating delay loop (skipped) preset value.. 1631.46 BogoMIPS (lpj=8157341)
+[    0.017832] pid_max: default: 32768 minimum: 301
+[    0.023138] Mount-cache hash table entries: 512
+[    0.028788] Initializing cgroup subsys debug
+[    0.033543] Initializing cgroup subsys cpuacct
+[    0.038518] Initializing cgroup subsys freezer
+[    0.043463] CPU: Testing write buffer coherency: ok
+[    0.129711] CPU1: Booted secondary processor
+[    0.169702] CPU2: Booted secondary processor
+[    0.209699] CPU3: Booted secondary processor
+[    0.209737] Brought up 4 CPUs
+[    0.227274] SMP: Total of 4 processors activated (6525.87 BogoMIPS).
+[    0.234683] devtmpfs: initialized
+[    0.244823] NET: Registered protocol family 16
+[    0.249864] last_log: 0xed100000 map to 0xf7004000 and copy to 0xc0c9f180 (version 2.1)
+[    0.275677] warning:lcdc0 not add to system!
+[    0.280497] lcdc1 is used as primary display device controller!
+[    0.387368] rk29sdk_wifi_bt_gpio_control_init: init finished
+[    0.412246] bio: create slab <bio-0> at 0
+[    0.417390] SCSI subsystem initialized
+[    0.421842] usbcore: registered new interface driver usbfs
+[    0.428072] usbcore: registered new interface driver hub
+[    0.434129] usbcore: registered new device driver usb
+[    0.440034] rk30_i2c rk30_i2c.0: i2c-0: RK30 I2C adapter
+[    0.446197] rk30_i2c rk30_i2c.1: i2c-1: RK30 I2C adapter
+[    0.452347] rk30_i2c rk30_i2c.2: i2c-2: RK30 I2C adapter
+[    0.458399] rk30_i2c rk30_i2c.3: i2c-3: RK30 I2C adapter
+[    0.464472] rk30_i2c rk30_i2c.4: i2c-4: RK30 I2C adapter
+[    0.470632] rk30-adc rk30-adc: rk30 adc: driver initialized
+[    0.477157] Advanced Linux Sound Architecture Driver Version 1.0.24.
+[    0.484702] Bluetooth: Core ver 2.16
+[    0.488779] NET: Registered protocol family 31
+[    0.493791] Bluetooth: HCI device and connection manager initialized
+[    0.500910] Bluetooth: HCI socket layer initialized
+[    0.506385] Bluetooth: L2CAP socket layer initialized
+[    0.512063] Bluetooth: SCO socket layer initialized
+[    0.517838] cfg80211: Calling CRDA to update world regulatory domain
+[    0.525841] rk fb probe ok!
+[    0.534040] act8846_set_init,line=17
+[    0.538075] act8846_set_init:g_pmic_type=3
+[    0.544480] act8846_set_init  act_dcdc1 =1200000mV end
+[    0.552113] act8846_set_init  vdd_core =1000000mV end
+[    0.559632] act8846_set_init  vdd_cpu =1000000mV end
+[    0.567056] act8846_set_init  act_dcdc4 =3300000mV end
+[    0.574039] act8846_set_init  act_ldo1 =1000000mV end
+[    0.581457] act8846_set_init  act_ldo2 =1200000mV end
+[    0.588872] act8846_set_init  act_ldo3 =1800000mV end
+[    0.596291] act8846_set_init  act_ldo4 =3300000mV end
+[    0.603708] act8846_set_init  act_ldo5 =3300000mV end
+[    0.611127] act8846_set_init  act_ldo6 =1800000mV end
+[    0.617900] act8846_set_init  act_ldo7 =1800000mV end
+[    0.625325] act8846_set_init  act_ldo8 =2800000mV end
+[    0.631006] gpio_request: gpio-283 (NULL) status -16
+[    0.631031] act8846_set_init,line=78 END
+[    0.635486] i2c-core: driver [act8846] using legacy suspend method
+[    0.642407] i2c-core: driver [act8846] using legacy resume method
+[    0.649258] Switching to clocksource rk_timer
+[    0.659103] Switched to NOHz mode on CPU #0
+[    0.659735] Switched to NOHz mode on CPU #3
+[    0.659750] Switched to NOHz mode on CPU #2
+[    0.659769] Switched to NOHz mode on CPU #1
+[    0.680635] lcdc1:reg_phy_base = 0x1010e000,reg_vir_base:0xf70a0000
+[    0.687730] fb0:win0
+[    0.687736] fb1:win1
+[    0.687741] fb2:win2
+[    0.695275] rk3188 lcdc1 clk enable...
+[    0.699515] rk3188 lcdc1 clk disable...
+[    0.764601] fb0:phy:8d800000>>vir:f8000000>>len:0x1800000
+[    0.771049] rk_fb_register>>>>>fb0
+[    0.775120] rk_fb_register>>>>>fb1
+[    0.778984] rk3188 lcdc1 clk enable...
+[    0.783211] lcdc1: dclk:148500000>>fps:60 
+[    0.787560] rk30-lcdc rk30-lcdc.1: rk3188_load_screen for lcdc1 ok!
+[    0.794867] lcdc1 wakeup from standby!
+[    0.799094] lcdc1 win0 open,atv layer:1
+[    0.803413] lcdc1: dclk:148500000>>fps:60 
+[    0.807749] rk30-lcdc rk30-lcdc.1: rk3188_load_screen for lcdc1 ok!
+[    0.815050] rk3188 lcdc1 probe ok!
+[    0.818980] HDMI: hdmi_register() - video source 1 display 0
+[    0.825552] HDMI: hdmi_submit_work event 0100 delay 0
+[    0.831333] HDMI: 
+[    0.831340] hdmi_work_queue() - evt= 1 0
+[    0.838072] HDMI: hdmi_work_queue() - exit
+[    0.838084] 
+[    0.951591] HDMI: hdmi_submit_work event 0404 delay 10
+[    0.957373] IT66121 probe success.
+[    0.964240] HDMI: 
+[    0.964247] hdmi_work_queue() - evt= 4 4
+[    0.971244] HDMI: hdmi_work_queue() - hpd is 2 hotplug is 0
+[    0.981101] HDMI: hdmi_wq_insert
+[    0.984994] NET: Registered protocol family 2
+[    0.990043] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.998576] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+[    1.009007] TCP bind hash table entries: 65536 (order: 7, 786432 bytes)
+[    1.017612] TCP: Hash tables configured (established 131072 bind 65536)
+[    1.025049] TCP reno registered
+[    1.028617] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    1.035317] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    1.042861] NET: Registered protocol family 1
+[    1.048083] RPC: Registered named UNIX socket transport module.
+[    1.054739] RPC: Registered udp transport module.
+[    1.060054] RPC: Registered tcp transport module.
+[    1.065388] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    1.072793] RK29 Backlight Driver Initialized.
+[    1.078092] Unpacking initramfs...
+[    1.082315] HDMI: hdmi_submit_work event 0404 delay 10
+[    1.084623] HDMI: hdmi_wq_parse_edid
+[    1.169190] Freeing initrd memory: 1536K
+[    1.173690] PMU: registered new PMU device of type 0
+[    1.180717] rk3188 cpufreq version 2.0, suspend freq 1200 MHz
+[    1.188340] Loaded driver for PL330 DMAC-1 rk29-pl330
+[    1.194001] 	DBUFF-32x8bytes Num_Chans-6 Num_Peri-12 Num_Events-12
+[    1.201017] Loaded driver for PL330 DMAC-2 rk29-pl330
+[    1.206720] 	DBUFF-64x8bytes Num_Chans-7 Num_Peri-20 Num_Events-14
+[    1.214416] highmem bounce pool size: 64 pages
+[    1.219596] ashmem: initialized
+[    1.226807] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.233895] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    1.241691] NTFS driver 2.1.30 [Flags: R/W].
+[    1.246736] fuse init (API version 7.16)
+[    1.252282] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    1.260566] io scheduler noop registered (default)
+[    1.265970] io scheduler sio registered
+[    1.270285] io scheduler vr registered
+[    1.274518] io scheduler zen registered
+[    1.278822] io scheduler deadline registered
+[    1.283675] io scheduler cfq registered
+[    1.288035] io scheduler row registered
+[    1.300433] rga: Driver loaded succesfully
+[    1.305259] rk_serial.c v1.3 2012-12-14
+[    1.309643] rk_serial rk_serial.0: dma_rx_buffer 0xffdfc000
+[    1.315897] rk_serial rk_serial.0: dma_rx_phy 0x8c17c000
+[    1.321850] rk_serial rk_serial.0: serial_rk_init_dma_rx sucess
+[    1.328504] rk_serial.0: ttyS0 at MMIO 0x10124000 (irq = 66) is a rk29_serial.0
+[    1.478210] ******** Show Sink Info ********
+[    1.483003] Support video mode: 
+[    1.486680] rk_serial rk_serial.0: membase 0xf70c4000
+[    1.492386] rk_serial.3: ttyS3 at MMIO 0x20068000 (irq = 69) is a rk29_serial.3
+[    1.500573] 	1920x1080p@60Hz.
+[    1.503928] 	1920x1080p@50Hz.
+[    1.507316] 	1280x720p@60Hz.
+[    1.510584] 	1280x720p@50Hz.
+[    1.513845] 	720x576p@50Hz.
+[    1.517031] 	720x480p@60Hz.
+[    1.520195] Support audio type: LPCM
+[    1.524229] Support audio sample rate: 
+[    1.528541] 	32000
+[    1.530839] 	44100
+[    1.533140] 	48000
+[    1.535446] Support audio word lenght: 
+[    1.539747] 	16bit
+[    1.542046] 	20bit
+[    1.544353] 	24bit
+[    1.546644] ******** Show Sink Info ********
+[    1.551423] HDMI: hdmi_wq_set_video
+[    1.555374] hdmi_set_lcdc vic is 16
+[    1.559305] hdmi_set_lcdc selected vic is 16
+[    1.564118] lcdc1: dclk:148500000>>fps:60 
+[    1.568441] rk30-lcdc rk30-lcdc.1: rk3188_load_screen for lcdc1 ok!
+[    1.623679] HDMI: hdmi_wq_set_audio
+[    1.644208] rk_serial rk_serial.3: membase 0xf70c8000
+[    1.650080] Rockchip ion module(version: 1.0) is successfully loaded
+[    1.651775] HDMI: hdmi_wq_set_output mute 0
+[    1.651783] HDMI: hdmi_work_queue() - exit
+[    1.651789] 
+[    1.651795] HDMI: 
+[    1.651799] hdmi_work_queue() - evt= 4 4
+[    1.651806] HDMI: hdmi_work_queue() - hpd is 2 hotplug is 2
+[    1.651815] HDMI: hdmi_work_queue() - exit
+[    1.651820] 
+[    1.688934] loop: module loaded
+[    1.692516] Android kernel panic handler initialized (bind=kpanic)
+[    1.699961] PPP generic driver version 2.4.2
+[    1.704900] PPP Deflate Compression module registered
+[    1.710545] PPP BSD Compression module registered
+[    1.716361] PPP MPPE Compression module registered
+[    1.721722] NET: Registered protocol family 24
+[    1.726725] tun: Universal TUN/TAP device driver, 1.6
+[    1.732365] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.739447] usbcore: registered new interface driver asix
+[    1.745504] usbcore: registered new interface driver cdc_ether
+[    1.752018] usbcore: registered new interface driver dm9620
+[    1.758272] usbcore: registered new interface driver SR9700_android
+[    1.765292] usbcore: registered new interface driver net1080
+[    1.771635] usbcore: registered new interface driver cdc_subset
+[    1.778259] usbcore: registered new interface driver zaurus
+[    1.784486] cdc_ncm: 04-Aug-2011
+[    1.788138] usbcore: registered new interface driver cdc_ncm
+[    1.794480] Rockchip WiFi SYS interface (V1.00) ... 
+[    1.800086] usbcore: registered new interface driver cdc_acm
+[    1.806406] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    1.815359] usbcore: registered new interface driver usblp
+[    1.821492] Initializing USB Mass Storage driver...
+[    1.826985] usbcore: registered new interface driver usb-storage
+[    1.833672] USB Mass Storage support registered.
+[    1.838917] usbcore: registered new interface driver usbserial
+[    1.845449] USB Serial support registered for generic
+[    1.851116] usbcore: registered new interface driver usbserial_generic
+[    1.858385] usbserial: USB Serial Driver core
+[    1.863275] USB Serial support registered for GSM modem (1-port)
+[    1.870005] usbcore: registered new interface driver option
+[    1.876241] option: v0.7.2:USB Driver for GSM modems
+[    1.881809] USB Serial support registered for usi-modem
+[    1.887694] usbcore: registered new interface driver usi-modem
+[    2.105677] DWC_OTG: ^^^^^^^^^^^^^^^^^Device Mode
+[    2.110953] usb20_otg usb20_otg: DWC OTG Controller
+[    2.116491] usb20_otg usb20_otg: new USB bus registered, assigned bus number 1
+[    2.124555] usb20_otg usb20_otg: irq 48, io mem 0x00000000
+[    2.130672] DWC_OTG: dwc_otg_hcd_start controller in device mode,everest
+[    2.138196] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    2.145761] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.153798] usb usb1: Product: DWC OTG Controller
+[    2.159060] usb usb1: Manufacturer: Linux 3.0.36+ dwc_otg_hcd
+[    2.165473] usb usb1: SerialNumber: usb20_otg
+[    2.170676] hub 1-0:1.0: USB hub found
+[    2.174907] hub 1-0:1.0: 1 port detected
+[    2.181631] DWC_OTG: host20_driver_probe host2.0 reg addr: 0x101c0000 remap:0xf7180000
+[    2.400759] DWC_OTG: ^^^^^^^^^^^^^^^^^^Host Mode
+[    2.405950] usb20_host usb20_host: DWC OTG Controller
+[    2.411617] usb20_host usb20_host: new USB bus registered, assigned bus number 2
+[    2.419878] usb20_host usb20_host: irq 49, io mem 0x00000000
+[    2.426238] DWC_OTG: Init: Port Power? op_state=1
+[    2.431495] DWC_OTG: Init: Power Port (0)
+[    2.436019] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[    2.443579] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.451632] usb usb2: Product: DWC OTG Controller
+[    2.456895] usb usb2: Manufacturer: Linux 3.0.36+ host20_hcd
+[    2.463208] usb usb2: SerialNumber: usb20_host
+[    2.468439] hub 2-0:1.0: USB hub found
+[    2.472647] hub 2-0:1.0: 1 port detected
+[    2.478074] android_usb gadget: Mass Storage Function, version: 2009/09/11
+[    2.485750] android_usb gadget: Number of LUNs=2
+[    2.490923]  lun0: LUN: removable file: (no medium)
+[    2.496396]  lun1: LUN: removable file: (no medium)
+[    2.502024] android_usb gadget: android_usb ready
+[    2.507455] input: rk29-keypad as /devices/platform/rk29-keypad/input/input0
+[    2.515604] ++++++++remotectl_init
+[    2.519466] ++++++++remotectl_probe
+[    2.523408] remotectl probe j=0x0
+[    2.527148] remotectl probe j=0x1
+[    2.530968] input: rkxx-remotectl as /devices/platform/rkxx-remotectl/input/input1
+[    2.542300] rtc_hym8563 1-0051: clock/calendar information is no longer guaranteed
+[    2.555829] using rtc device, rtc_hym8563, for alarms
+[    2.561214] rtc_hym8563 1-0051: rtc core: registered rtc_hym8563 as rtc0
+[    2.569020] i2c /dev entries driver
+[    2.573402] lirc_dev: IR Remote Control driver registered, major 251 
+[    2.580595] IR NEC protocol handler initialized
+[    2.585680] IR RC5(x) protocol handler initialized
+[    2.591032] IR RC6 protocol handler initialized
+[    2.596141] IR JVC protocol handler initialized
+[    2.601217] IR Sony protocol handler initialized
+[    2.606394] IR RC5 (streamzap) protocol handler initialized
+[    2.612625] IR LIRC bridge handler initialized
+[    2.617618] Linux video capture interface: v2.00
+[    2.622829] i2c-core: driver [tuner] using legacy suspend method
+[    2.629536] i2c-core: driver [tuner] using legacy resume method
+[    2.636198] i2c-core: driver [msp3400] using legacy suspend method
+[    2.643088] i2c-core: driver [msp3400] using legacy resume method
+[    2.650023] usbcore: registered new interface driver em28xx
+[    2.656273] em28xx driver loaded
+[    2.659906] Em28xx: Initialized (Em28xx Audio Extension) extension
+[    2.666824] cx231xx v4l2 driver loaded.
+[    2.671183] usbcore: registered new interface driver cx231xx
+[    2.677514] cx231xx: Cx231xx Audio Extension initialized
+[    2.683504] usbcore: registered new interface driver usbvision
+[    2.690020] USBVision USB Video Device Driver for Linux : 0.9.10
+[    2.696767] usbcore: registered new interface driver zr364xx
+[    2.703095] zr364xx: Zoran 364xx
+[    2.706777] usbcore: registered new interface driver stkwebcam
+[    2.713284] sn9c102: V4L2 driver for SN9C1xx PC Camera Controllers v1:1.47pre49
+[    2.721481] usbcore: registered new interface driver sn9c102
+[    2.727814] et61x251: V4L2 driver for ET61X[12]51 PC Camera Controllers v1:1.09
+[    2.735988] usbcore: registered new interface driver et61x251
+[    2.742392] pwc: Philips webcam module version 10.0.14 loaded.
+[    2.748909] pwc: Supports Philips PCA645/646, PCVC675/680/690, PCVC720[40]/730/740/750 & PCVC830/840.
+[    2.759162] pwc: Also supports the Askey VC010, various Logitech Quickcams, Samsung MPC-C10 and MPC-C30,
+[    2.769697] pwc: the Creative WebCam 5 & Pro Ex, SOTEC Afina Eye and Visionite VCS-UC300 and VCS-UM100.
+[    2.780186] usbcore: registered new interface driver Philips webcam
+[    2.787189] gspca: v2.13.0 registered
+[    2.791355] usbcore: registered new interface driver benq
+[    2.797418] usbcore: registered new interface driver conex
+[    2.803573] usbcore: registered new interface driver cpia1
+[    2.809725] usbcore: registered new interface driver etoms
+[    2.815900] usbcore: registered new interface driver finepix
+[    2.822233] usbcore: registered new interface driver jeilinj
+[    2.828583] usbcore: registered new interface driver kinect
+[    2.834865] usbcore: registered new interface driver konica
+[    2.841117] usbcore: registered new interface driver mars
+[    2.847188] usbcore: registered new interface driver mr97310a
+[    2.853635] usbcore: registered new interface driver nw80x
+[    2.859801] usbcore: registered new interface driver ov519
+[    2.864214] usb 2-1: new low speed USB device number 2 using usb20_host
+[    2.873340] usbcore: registered new interface driver ov534
+[    2.879517] usbcore: registered new interface driver ov534_9
+[    2.885925] usbcore: registered new interface driver pac207
+[    2.892184] usbcore: registered new interface driver pac7302
+[    2.898544] usbcore: registered new interface driver pac7311
+[    2.904916] usbcore: registered new interface driver sn9c2028
+[    2.911346] usbcore: registered new interface driver sn9c20x
+[    2.917701] usbcore: registered new interface driver sonixb
+[    2.923940] usbcore: registered new interface driver sonixj
+[    2.930184] usbcore: registered new interface driver spca500
+[    2.936554] usbcore: registered new interface driver spca501
+[    2.942901] usbcore: registered new interface driver spca505
+[    2.949266] usbcore: registered new interface driver spca506
+[    2.955610] usbcore: registered new interface driver spca508
+[    2.961945] usbcore: registered new interface driver spca561
+[    2.968308] usbcore: registered new interface driver spca1528
+[    2.974748] usbcore: registered new interface driver sq905
+[    2.980888] usbcore: registered new interface driver sq905c
+[    2.987169] usbcore: registered new interface driver sq930x
+[    2.993442] usbcore: registered new interface driver sunplus
+[    2.999810] usbcore: registered new interface driver stk014
+[    3.006066] usbcore: registered new interface driver stv0680
+[    3.012396] usbcore: registered new interface driver t613
+[    3.018473] usbcore: registered new interface driver tv8532
+[    3.024721] usbcore: registered new interface driver vc032x
+[    3.030964] usbcore: registered new interface driver vicam
+[    3.037150] usbcore: registered new interface driver xirlink-cit
+[    3.043901] usbcore: registered new interface driver zc3xx
+[    3.050079] usbcore: registered new interface driver ALi m5602
+[    3.056630] usbcore: registered new interface driver STV06xx
+[    3.062987] usbcore: registered new interface driver gspca_gl860
+[    3.069754] usbcore: registered new interface driver s2255
+[    3.075933] usbcore: registered new interface driver uvcvideo
+[    3.082353] USB Video Class driver (v1.1.0)
+[    3.087110] def_ref_volt: 1800mV, curr_ref_volt: 1800mV
+[    3.092956] RK29 Watchdog Timer, (c) 2011 Rockchip Electronics
+[    3.099728] rk29-wdt rk29-wdt.0: starting watchdog timer
+[    3.106020] device-mapper: uevent: version 1.0.3
+[    3.111388] device-mapper: ioctl: 4.20.0-ioctl (2011-02-02) initialised: dm-devel@redhat.com
+[    3.120986] Bluetooth: HCI UART driver ver 2.2
+[    3.125989] Bluetooth: HCI H4 protocol initialized
+[    3.131361] Bluetooth: HCI BCSP protocol initialized
+[    3.136944] Bluetooth: HCILL protocol initialized
+[    3.142216] Bluetooth: Generic Bluetooth USB driver ver 0.6
+[    3.148551] usbcore: registered new interface driver btusb
+[    3.154716] Bluetooth: Generic Bluetooth SDIO driver ver 0.1
+[    3.161134] cpuidle: using governor ladder
+[    3.165750] cpuidle: using governor menu
+[    3.170197] usb 2-1: New USB device found, idVendor=062a, idProduct=0000
+[    3.177680] usb 2-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    3.185501] .Line3910..The End of SDMMC-probe Ver.5.03 The last modify date is 2013-02-21.  [sd_mmc]
+[    3.185630] .Line3910..The End of SDMMC-probe Ver.5.03 The last modify date is 2013-02-21.  [sdio]
+[    3.186053] usbcore: registered new interface driver usbhid
+[    3.186061] usbhid: USB HID core driver
+[    3.186349] logger: created 256K log 'log_main'
+[    3.186407] logger: created 256K log 'log_events'
+[    3.186463] logger: created 256K log 'log_radio'
+[    3.186520] logger: created 256K log 'log_system'
+[    3.236947] 
+[    3.236950] drivers/mmc/core/core.c...1824..  ===== mmc_rescan Begin....[mmc0]
+[    3.241218] asoc: hdmi-audio-codec <-> rk29_i2s.1 mapping ok
+[    3.241533] ALSA device list:
+[    3.241539]   #0: ROCKCHIP HDMI
+[    3.241668] GACT probability NOT on
+[    3.241682] Mirror/redirect action on
+[    3.241689] u32 classifier
+[    3.241696]     Actions configured
+[    3.241705] Netfilter messages via NETLINK v0.30.
+[    3.241759] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+[    3.242140] ctnetlink v0.93: registering with nfnetlink.
+[    3.242180] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+[    3.242193] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+[    3.242492] xt_time: kernel timezone is -0000
+[    3.242524] IPv4 over IPv4 tunneling driver
+[    3.242946] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    3.243080] arp_tables: (C) 2002 David S. Miller
+[    3.243131] TCP cubic registered
+[    3.243139] Initializing XFRM netlink socket
+[    3.243562] NET: Registered protocol family 10
+[    3.244401] Mobile IPv6
+[    3.244433] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    3.244561] IPv6 over IPv4 tunneling driver
+[    3.245195] NET: Registered protocol family 17
+[    3.245225] NET: Registered protocol family 15
+[    3.245456] Bluetooth: RFCOMM TTY layer initialized
+[    3.245498] Bluetooth: RFCOMM socket layer initialized
+[    3.245516] Bluetooth: RFCOMM ver 1.11
+[    3.245530] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    3.245541] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    3.245643] L2TP core driver, V2.0
+[    3.245677] NET: Registered protocol family 35
+[    3.245844] [BT_RFKILL]: Enter rfkill_rk_init
+[    3.245881] [BT_RFKILL]: Request irq for bt wakeup host
+[    3.245906] [BT_RFKILL]: ** disable irq
+[    3.274198] [BT_RFKILL]: bt shut off power
+[    3.274207] [BT_RFKILL]: ap6210 device registered.
+[    3.274248] Registering the dns_resolver key type
+[    3.274278] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    3.434713] 
+[    3.434717] =================
+[    3.434722] mmc_rescan..1831..  ====find no SDMMC host. [mmc0]
+[    3.434742] 
+[    3.434745] drivers/mmc/core/core.c...1824..  ===== mmc_rescan Begin....[mmc1]
+[    3.461231] Registering SWP/SWPB emulation handler
+[    3.467304] ddrfreq: verion 2.2
+[    3.470864] ddrfreq: normal 600MHz video 396MHz idle 396MHz suspend 396MHz reboot 222MHz
+[    3.479938] turn off boot console earlycon0
+[    3.486241] input: HID 062a:0000 as /devices/platform/usb20_host/usb2/2-1/2-1:1.0/input/input2
+[    3.486405] generic-usb 0003:062A:0000.0001: input,hidraw0: USB HID v1.10 Mouse [HID 062a:0000] on usb-usb20_host-1/input0
+[    3.486755] rtc_hym8563 1-0051: setting system clock to 2011-01-01 12:00:01 UTC (1293883201)
+[    3.487042] usbcore: registered new interface driver snd-usb-audio
+[    3.487086] Warning: unable to open an initial console.
+[    3.487131] Freeing init memory: 176K
+[    3.489089] init: /init.rc: 550: invalid option 'disable'
+[    3.489164] init: /init.rc: 591: invalid option 'start'
+[    3.489986] init (1): /proc/1/oom_adj is deprecated, please use /proc/1/oom_score_adj instead.
+[    3.520821] keychord: using input dev rk29-keypad for fevent
+[    3.520842] keychord: using input dev rkxx-remotectl for fevent
+[    3.777835] gp_rknand_info = : 0xed2c7200
+[    3.777950] request IRQ_NANDC irq , ret=0.........
+[    3.777974] FTL INFO:Version = 438,Date = 20130516
+[    3.778033] FlashCopyProgBuf1=0xc15ee000
+[    3.778062] ATime: 40 ns AHB: 148 timming: 1081
+[    3.778080] No.1 FLASH INFO:2c 88 5 c6 89
+[    3.778094] No.2 FLASH INFO:2c 88 5 c6 89
+[    3.778914] ATime: 32 ns AHB: 148 timming: 1061
+[    3.779047] ATime: 32 ns AHB: 148 timming: 1061
+[    3.779059] randomizer = 0 , EccBits = 18 pSpec->pReadRetrial = 0
+[    3.792722] GetRemapTbl...
+[    4.057864] HDMI: hdmi_submit_work event 0404 delay 10
+[    4.064192] HDMI: 
+[    4.064194] hdmi_work_queue() - evt= 4 4
+[    4.064208] HDMI: hdmi_work_queue() - hpd is 0 hotplug is 2
+[    4.064222] HDMI: hdmi_wq_remove
+[    4.087866] no layer of lcdc1 is used,go to standby!
+[    4.087893] rk3188 lcdc1 clk disable...
+[    4.087904] lcdc1 win0 closed,atv layer:0
+[    4.087934] HDMI: hdmi_work_queue() - exit
+[    4.087939] 
+[    4.157862] HDMI: hdmi_submit_work event 0404 delay 10
+[    4.164191] HDMI: 
+[    4.164194] hdmi_work_queue() - evt= 4 4
+[    4.164207] HDMI: hdmi_work_queue() - hpd is 0 hotplug is 0
+[    4.164219] HDMI: hdmi_work_queue() - exit
+[    4.164223] 
+[    4.207545] HDMI: hdmi_submit_work event 0404 delay 10
+[    4.214190] HDMI: 
+[    4.214193] hdmi_work_queue() - evt= 4 4
+[    4.214206] HDMI: hdmi_work_queue() - hpd is 2 hotplug is 0
+[    4.214218] HDMI: hdmi_wq_insert
+[    4.220848] HDMI: hdmi_wq_parse_edid
+[    4.261100] HDMI: hdmi_submit_work event 0404 delay 10
+[    4.478228] ******** Show Sink Info ********
+[    4.478240] Support video mode: 
+[    4.478249] 	1920x1080p@60Hz.
+[    4.478257] 	1920x1080p@50Hz.
+[    4.478265] 	1280x720p@60Hz.
+[    4.478272] 	1280x720p@50Hz.
+[    4.478279] 	720x576p@50Hz.
+[    4.478287] 	720x480p@60Hz.
+[    4.478294] Support audio type: LPCM
+[    4.478303] Support audio sample rate: 
+[    4.478312] 	32000
+[    4.478318] 	44100
+[    4.478323] 	48000
+[    4.478329] Support audio word lenght: 
+[    4.478338] 	16bit
+[    4.478343] 	20bit
+[    4.478348] 	24bit
+[    4.478354] ******** Show Sink Info ********
+[    4.478364] HDMI: hdmi_wq_set_video
+[    4.478373] hdmi_set_lcdc vic is 16
+[    4.478382] hdmi_set_lcdc selected vic is 16
+[    4.478408] rk3188 lcdc1 clk enable...
+[    4.478421] lcdc1: dclk:148500000>>fps:60 
+[    4.478434] rk30-lcdc rk30-lcdc.1: rk3188_load_screen for lcdc1 ok!
+[    4.478449] lcdc1 wakeup from standby!
+[    4.478460] lcdc1 win0 open,atv layer:1
+[    4.478471] lcdc1: dclk:148500000>>fps:60 
+[    4.478481] rk30-lcdc rk30-lcdc.1: rk3188_load_screen for lcdc1 ok!
+[    4.478496] lcdc1: dclk:148500000>>fps:60 
+[    4.478507] rk30-lcdc rk30-lcdc.1: rk3188_load_screen for lcdc1 ok!
+[    4.523576] HDMI: hdmi_wq_set_audio
+[    4.547637] HDMI: hdmi_wq_set_output mute 0
+[    4.547647] HDMI: hdmi_work_queue() - exit
+[    4.547652] 
+[    4.547664] HDMI: 
+[    4.547667] hdmi_work_queue() - evt= 4 4
+[    4.547680] HDMI: hdmi_work_queue() - hpd is 2 hotplug is 2
+[    4.547693] HDMI: hdmi_work_queue() - exit
+[    4.547698] 
+[    7.348973] done
+[    7.350006] totalLogicBlkRaw  = 15850
+[    7.350022] gBootMedia = 0 gSdmmcFwPartOffset =0!
+[    7.350034] rknand_buffer.c version: 4.38 20121130!
+[    7.350180] 10 cmdlinepart partitions found on MTD device rk29xxnand
+[    7.350197] Creating 10 MTD partitions on "rk29xxnand":
+[    7.350213] 0x000000400000-0x000000800000 : "misc"
+[    7.351080] 0x000000800000-0x000001000000 : "kernel"
+[    7.351745] 0x000001000000-0x000002000000 : "boot"
+[    7.352383] 0x000002000000-0x000003000000 : "recovery"
+[    7.353021] 0x000003000000-0x00001b000000 : "backup"
+[    7.353849] 0x00001b000000-0x000023000000 : "cache"
+[    7.354613] 0x000023000000-0x000063000000 : "userdata"
+[    7.355833] 0x000063000000-0x000063400000 : "kpanic"
+[    7.356624] apanic: Bound to mtd partition 'kpanic'
+[    7.356637] apanic: No panic data available
+[    7.356766] 0x000063400000-0x000088c00000 : "system"
+[    7.357785] 0x000088c00000-0x0003dea00000 : "user"
+[    7.365598] FtlSetSysProtAddr free  blk  16 in sys area!!
+[    7.365612] FtlSetSysProtAddr free  blk  17 in sys area!!
+[    7.365626] FtlSetSysProtAddr free  blk  32 in sys area!!
+[    7.365639] FtlSetSysProtAddr free  blk  33 in sys area!!
+[    7.365651] FtlSetSysProtAddr free  blk  34 in sys area!!
+[    7.365664] FtlSetSysProtAddr free  blk  35 in sys area!!
+[    7.365676] FtlSetSysProtAddr free  blk  36 in sys area!!
+[    7.365689] FtlSetSysProtAddr free  blk  37 in sys area!!
+[    7.365701] FtlSetSysProtAddr free  blk  38 in sys area!!
+[    7.365714] FtlSetSysProtAddr free  blk  39 in sys area!!
+[    7.365726] FtlSetSysProtAddr free  blk  40 in sys area!!
+[    7.365738] FtlSetSysProtAddr free  blk  41 in sys area!!
+[    7.365751] FtlSetSysProtAddr free  blk  23 in sys area!!
+[    7.365766] FtlSetSysProtAddr free  blk  30 in sys area!!
+[    7.365778] FtlSetSysProtAddr free  blk  42 in sys area!!
+[    7.365791] FtlSetSysProtAddr free  blk  43 in sys area!!
+[    7.365803] FtlSetSysProtAddr free  blk  20 in sys area!!
+[    7.365815] FtlSetSysProtAddr free  blk  21 in sys area!!
+[    7.365828] FtlSetSysProtAddr free  blk  22 in sys area!!
+[    7.365840] FtlSetSysProtAddr free  blk  24 in sys area!!
+[    7.365852] FtlSetSysProtAddr free  blk  25 in sys area!!
+[    7.365865] FtlSetSysProtAddr free  blk  26 in sys area!!
+[    7.365879] FtlSetSysProtAddr free  blk  27 in sys area!!
+[    7.365892] FtlSetSysProtAddr free  blk  28 in sys area!!
+[    7.365905] FtlSetSysProtAddr free  blk  29 in sys area!!
+[    7.365917] FtlSetSysProtAddr free  blk  31 in sys area!!
+[    7.365929] FtlSetSysProtAddr free  blk  18 in sys area!!
+[    7.365955] startBlk = 476  sysProtAddr = 475 
+[    7.385109] EXT4-fs (mtdblock8): mounted filesystem with ordered data mode. Opts: noauto_da_alloc
+[    7.968464] EXT4-fs (mtdblock6): mounted filesystem with ordered data mode. Opts: noauto_da_alloc
+[    8.021617] EXT4-fs (mtdblock5): mounted filesystem with ordered data mode. Opts: noauto_da_alloc
+[    8.026598] UMP: Using OS memory backend, allocation limit: 1073741824
+[    8.026617] UMP: UMP device driver  loaded
+[    8.040711] Mali: Mali400 inside of rk3188!
+[    8.040726] Mali: mali freq table num : 2 
+[    8.040737] Mali: mali freq table :Mali: 297,Mali: 446,Mali: 
+[    8.040763] Mali: init mali clock success 
+[    8.041919] Mali: @@@@@@@Mali device driver loaded success@@@@@@@@
+[    8.043380] mirroring: Unknown symbol video_data_to_mirroring (err 0)
+[    8.043423] mirroring: Unknown symbol audio_data_to_mirroring (err 0)
+[    8.044775] rk29_ipp: module is from the staging directory, the quality is unknown, you have been warned.
+[    8.045237] ipp irq 47
+[    8.045511] IPP init, version rk30-ipp 1.003
+[    8.115554] init: cannot find '/system/vendor/bin/pvrsrvctl', disabling 'pvrsrvctl'
+[    8.119395] init: cannot find '/system/etc/install-recovery.sh', disabling 'flash_recovery'
+[    8.119823] init: cannot find '/system/bin/drmservice', disabling 'drmservice'
+[    8.120314] init: cannot find '/system/bin/akmd', disabling 'akmd'
+[    8.131314] vpu: power on
+[    8.131358] VPU_SERVICE: checking hw id 4831
+[    8.131834] vpu: power off...done
+[    8.131857] VPU_SERVICE: init success
+[    8.132882] rk_serial rk_serial.0: serial_rk_init_dma_rx sucess
+[    8.133374] init: property 'ro.serialno' doesn't exist while expanding '${ro.serialno}'
+[    8.133410] init: cannot expand '${ro.serialno}' while writing to '/sys/class/android_usb/android0/iSerial'
+[    8.133779] init: using deprecated syntax for specifying property 'ro.product.usbfactory', use ${name} instead
+[    8.254485] init: service 'console' requires console
+[    8.254853] android_usb: already disabled
+[    8.254977] android_usb: already disabled
+[    8.256490] adb_open
+[    8.299066] HDMI: hdmi_submit_work event 0100 delay 0
+[    8.299096] HDMI: 
+[    8.299099] hdmi_work_queue() - evt= 1 0
+[    8.299113] HDMI: hdmi_work_queue() - exit
+[    8.299118] 
+[    8.305301] .416.. MMC0 receive the message sd-No-Media from VOLD.[sd_mmc]
+[    8.305322] .447.. MMC0 receive the message No-Media from VOLD. waitTimes=0 [sd_mmc]
+[    8.378190] init: no such service 'ril-daemon3'
+[    8.738415] rk fb use 3 buffers
+[    8.774321] lcdc1 win1 open,atv layer:2
+[    8.774352] lcdc1: dclk:148500000>>fps:60 
+[    8.774379] rk30-lcdc rk30-lcdc.1: rk3188_load_screen for lcdc1 ok!
+[    8.774418] lcdc1 win1 closed,atv layer:1
+[    8.813685] rk30-lcdc rk30-lcdc.1: blank mode:0
+[    9.501124] init: sys_prop: permission denied uid:1013  name:media.cfg.audio.bypass
+[    9.501288] init: sys_prop: permission denied uid:1013  name:media.cfg.audio.mul
+[   11.062374] warning: `zygote' uses 32-bit capabilities (legacy support in use)
+[   16.737152] request_suspend_state: wakeup (3->0) at 16682965961 (2011-01-01 12:00:14.734683626 UTC)
+[   17.093448] init: no such service 'dhcpcd_'
+[   17.141530] =======================================================
+[   17.141551] ==== Launching Wi-Fi driver! (Powered by Rockchip) ====
+[   17.141568] =======================================================
+[   17.141586] RKWIFI WiFi driver (Powered by Rockchip,Ver 4.53.WFD) init.
+[   17.141822] =========== WLAN placed in POWER ON ========
+[   17.141887] ANDROID-ERROR) wifi_set_power = 1
+[   17.141905] rk29sdk_wifi_power: 1
+[   17.393494] wifi turn on power
+[   17.393505] ANDROID-ERROR) wifi_set_carddetect = 1
+[   17.393518] rk29sdk_wifi_set_carddetect:1
+[   17.393531] mmc1: slot status change detected(0-1)
+[   17.393555] rk29_sdmmc_change_clk_div..1935..  newDiv=42, newCLK=294Khz [sdio]
+[   17.584207] 
+[   17.584211] drivers/mmc/core/core.c...1824..  ===== mmc_rescan Begin....[mmc1]
+[   17.628112] 
+[   17.628116] mmc_attach_sdio..801..  ===== Begin to identify card as SDIO-card. [mmc1]
+[   17.639640] mmc1: queuing unknown CIS tuple 0x80 (2 bytes)
+[   17.641580] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[   17.643517] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[   17.646983] mmc1: queuing unknown CIS tuple 0x80 (7 bytes)
+[   17.663860] rk29_sdmmc_change_clk_div..1935..  newDiv=0, newCLK=24750Khz [sdio]
+[   17.665657] mmc1: new high speed SDIO card at address 0001
+[   17.666613] mmc_rescan_try_freq..1675..  ===== Initialize SDIO successfully. [mmc1]
+[   17.666807] Linux Kernel SDIO/MMC Driver
+[   17.667220] dhdsdio_probe : no mutex held. set lock
+[   17.667268] FW_PATH = /system/etc/firmware/fw_RK901.bin
+[   17.667275] NVRAM_PATH = /system/etc/firmware/nvram_AP6210.txt
+[   17.667395] F1 signature read @0x18000000=0x1591a962
+[   17.670917] DHD: dongle ram size is set to 245760(orig 245760)
+[   17.671556] dhd_bus_select_firmware_name_by_chip: firmware_path=/system/etc/firmware/fw_RK901a2.bin
+[   17.672550] wl_create_event_handler thr:1a2 created
+[   17.672747] wl_create_event_handler thr:1a2 started
+[   17.674673] p2p0: P2P Interface Registered
+[   17.674792] dhd_attach thr:1a3 created
+[   17.674978] dhd_attach thr:1a3 started
+[   17.675065] dhd_attach thr:1a4 created
+[   17.675186] dhd_attach thr:1a4 started
+[   17.675277] dhd_attach thr:1a5 created
+[   17.675375] dhd_attach thr:1a5 started
+[   17.675649] ANDROID-ERROR) wifi_get_mac_addr
+[   17.675675] bcmsdh_set_drvdata Enter
+[   17.677124] Broadcom Dongle Host Driver: register interface [wlan0] MAC: 00:90:4c:11:22:33
+[   17.677200] dhdsdio_probe : the lock is released.
+[   17.677683] 
+[   17.677690] Dongle Host Driver, version 1.28.13.1.1 (r)
+[   17.677705] Compiled in drivers/net/wireless/bcmdhd on Jul  4 2013 at 10:32:45
+[   17.677946] ANDROID-ERROR) wifi_set_power = 0
+[   17.677975] rk29sdk_wifi_power: 0
+[   17.677998] gpio_request: gpio-277 (mmc1-clk) status -16
+[   17.678022] gpio_request: gpio-272 (mmc1-cmd) status -16
+[   17.678044] gpio_request: gpio-273 (mmc1-data0) status -16
+[   17.880022] wifi shut off power
+[   17.880034] =========== WLAN placed in RESET ========
+[   18.116875] dhd_bus_select_firmware_name_by_chip: firmware_path=/system/etc/firmware/fw_RK901a2.bin
+[   18.116904] Dongle Host Driver, version 1.28.13.1.1 (r)
+[   18.116912] Compiled in drivers/net/wireless/bcmdhd on Jul  4 2013 at 10:32:45
+[   18.116937] wl_android_wifi_on in
+[   18.116949] ANDROID-ERROR) wifi_set_power = 1
+[   18.116965] rk29sdk_wifi_power: 1
+[   18.214188] DWC_OTG: ********vbus detect*********************************************
+[   18.368695] wifi turn on power
+[   18.368706] =========== WLAN going back to live  ========
+[   18.368721] sdio_reset_comm():
+[   18.368746] rk29_sdmmc_change_clk_div..1935..  newDiv=42, newCLK=294Khz [sdio]
+[   18.374676] rk29_sdmmc_change_clk_div..1935..  newDiv=0, newCLK=24750Khz [sdio]
+[   18.374971] dhd_bus_devreset: == WLAN ON ==
+[   18.374983] dhd_bus_devreset called when dongle is not in reset
+[   18.374999] Will call dhd_bus_start instead
+[   18.375240] F1 signature read @0x18000000=0x1591a962
+[   18.378098] DHD: dongle ram size is set to 245760(orig 245760)
+[   18.378678] dhd_bus_select_firmware_name_by_chip: firmware_path=/system/etc/firmware/fw_RK901a2.bin
+[   18.399444] DWC_OTG: ********soft connect!!!*****************************************
+[   18.405455] DWC_OTG: USB SUSPEND
+[   18.653183] bcmsdh_set_drvdata Enter
+[   18.654908] ANDROID-ERROR) wifi_get_mac_addr
+[   18.666028] CFG80211-ERROR) wl_cfg80211_attach_post : p2p0: p2p_dev_addr=9a:3b:16:a0:ad:ed
+[   20.214197] DWC_OTG: ********soft reconnect******************************************
+[   20.399347] DWC_OTG: ********soft connect!!!*****************************************
+[   20.405355] DWC_OTG: USB SUSPEND
+[   20.615265] wl_bss_connect_done succeeded with dc:9f:db:f6:76:6a
+[   20.680908] wl_bss_connect_done succeeded with dc:9f:db:f6:76:6a
+[   22.197275] acc_open
+[   22.197295] acc_release
+[   22.214224] DWC_OTG: ********soft reconnect******************************************
+[   22.236036] init: no such service 'dhcpcd_'
+[   22.399319] DWC_OTG: ********soft connect!!!*****************************************
+[   22.405325] DWC_OTG: USB SUSPEND
+[   28.105398] qtaguid: ctrl_counterset(s 1 10018): insufficient priv from pid=408 tgid=351 uid=1000
+[   29.314224] wlan0: no IPv6 routers present
+[   29.504226] p2p0: no IPv6 routers present
+[   33.744051] init: sys_prop: permission denied uid:1003  name:service.bootanim.exit
+[   36.106588] rknand_buffer_thread write data begin 259e00 0
+[   37.718013] error:GetRemap PAB is 0 ,LBA = 30d800 , new PBA = b16 , b16 
+[   38.342274] error:GetRemap PAB is 0 ,LBA = 30e000 , new PBA = b1e , b1e 
+[   38.970203] error:GetRemap PAB is 0 ,LBA = 30e800 , new PBA = 96b , 96b 
+[   39.576626] error:GetRemap PAB is 0 ,LBA = 30f000 , new PBA = 96a , 96a 
+[   40.194829] error:GetRemap PAB is 0 ,LBA = 30f800 , new PBA = 1ed , 1ed 
+[   48.158052] qtaguid: ctrl_counterset(s 1 10053): insufficient priv from pid=408 tgid=351 uid=1000
+[   51.338293] qtaguid: ctrl_counterset(s 0 10018): insufficient priv from pid=408 tgid=351 uid=1000
+[   74.794115] binder: 351:411 transaction failed 29189, size 100-4
+[   76.352934] init: untracked pid 1208 exited
+[   78.094892] usb 2-1: USB disconnect, device number 2
+[   78.504324] DWC_OTG: dwc_otg_hcd_enable, disable host controller
+[   80.504355] DWC_OTG: dwc_otg_hcd_enable, enable host controller
+[   80.509502] DWC_OTG: Init: Port Power? op_state=1
+[   80.509517] DWC_OTG: Init: Power Port (1)
+[   80.944253] usb 2-1: new full speed USB device number 3 using usb20_host
+[   81.162342] usb 2-1: New USB device found, idVendor=0596, idProduct=051c
+[   81.162367] usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[   81.162387] usb 2-1: Product: 3M MicroTouch USB controller
+[   81.162403] usb 2-1: Manufacturer: 3M
+[   81.182415] input: 3M 3M MicroTouch USB controller as /devices/platform/usb20_host/usb2/2-1/2-1:1.0/input/input3
+[   81.184741] hid-multitouch 0003:0596:051C.0002: input,hiddev0,hidraw0: USB HID v1.10 Pointer [3M 3M MicroTouch USB controller] on usb-usb20_host-1/input0
+[   81.412818] .447.. MMC0 receive the message No-Media from VOLD. waitTimes=0 [sd_mmc]
+[   87.594394] usb 2-1: USB disconnect, device number 3
+[   87.950697] .447.. MMC0 receive the message No-Media from VOLD. waitTimes=0 [sd_mmc]
+[   88.504260] DWC_OTG: dwc_otg_hcd_enable, disable host controller
+[  110.504208] DWC_OTG: dwc_otg_hcd_enable, enable host controller
+[  110.509271] DWC_OTG: Init: Port Power? op_state=1
+[  110.509290] DWC_OTG: Init: Power Port (1)
+[  110.944240] usb 2-1: new full speed USB device number 4 using usb20_host
+[  111.162321] usb 2-1: New USB device found, idVendor=0596, idProduct=051c
+[  111.162344] usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[  111.162366] usb 2-1: Product: 3M MicroTouch USB controller
+[  111.162383] usb 2-1: Manufacturer: 3M
+[  111.184618] input: 3M 3M MicroTouch USB controller as /devices/platform/usb20_host/usb2/2-1/2-1:1.0/input/input4
+[  111.186564] hid-multitouch 0003:0596:051C.0003: input,hiddev0,hidraw0: USB HID v1.10 Pointer [3M 3M MicroTouch USB controller] on usb-usb20_host-1/input0
+[  111.392509] .447.. MMC0 receive the message No-Media from VOLD. waitTimes=0 [sd_mmc]

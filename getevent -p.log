@@ -1,0 +1,27 @@
+ getevent -p                                                                                                                                                                                                  
+add device 1: /dev/input/event2
+  name:     "3M 3M MicroTouch USB controller"
+  events:
+    KEY (0001): 014a 
+    ABS (0003): 0000  : value 0, min 0, max 32767, fuzz 15, flat 0, resolution 0
+                0001  : value 0, min 0, max 32767, fuzz 15, flat 0, resolution 0
+                002f  : value 0, min 0, max 4, fuzz 0, flat 0, resolution 0
+                0035  : value 0, min 0, max 32767, fuzz 15, flat 0, resolution 0
+                0036  : value 0, min 0, max 32767, fuzz 15, flat 0, resolution 0
+                0039  : value 0, min 0, max 65535, fuzz 0, flat 0, resolution 0
+  input props:
+    INPUT_PROP_DIRECT
+add device 2: /dev/input/event0
+  name:     "rk29-keypad"
+  events:
+    KEY (0001): 0074  008f  009e 
+  input props:
+    <none>
+add device 3: /dev/input/event1
+  name:     "rkxx-remotectl"
+  events:
+    KEY (0001): 0066  0067  0069  006a  006c  0071  0072  0073 
+                0074  008b  008f  009e  00b7  00b8  00b9  00ba 
+                00d9  00e8  0175  0184  0190  0191  0192 
+  input props:
+    <none>
